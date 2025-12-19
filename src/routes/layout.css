@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+.was-validated{
+    @apply border-red-600 ring-2 ring-red-400 ring-offset-2;
+}
