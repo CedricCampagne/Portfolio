@@ -25,11 +25,11 @@
   <!-- Menu mobile (affiché si menuOpen = true) -->
   {#if navOpen}
     <ul class="flex flex-col gap-4 bg-slate-600 p-4 mt-2 rounded-xl text-white sm:hidden">
-      <li><a href="/">Accueil</a></li>
-      <li><a href="/about">A propos</a></li>
-      <li><a href="/skills">Compétences</a></li>
-      <li><a href="/projets">Projets</a></li>
-      <li><a href="/contact">Contacts</a></li>
+      <li class="hover:underline hover:underline-offset-4 hover:scale-105"><a href="/">Accueil</a></li>
+      <li class="hover:underline hover:underline-offset-4 hover:scale-105"><a href="#about">A propos</a></li>
+      <li class="hover:underline hover:underline-offset-4 hover:scale-105"><a href="#skill">Compétences</a></li>
+      <li class="hover:underline hover:underline-offset-4 hover:scale-105"><a href="#projets">Projets</a></li>
+      <li class="hover:underline hover:underline-offset-4 hover:scale-105"><a href="#contact">Contacts</a></li>
     </ul>
   {/if}
 </header>
