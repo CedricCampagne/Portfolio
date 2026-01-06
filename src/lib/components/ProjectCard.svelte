@@ -7,7 +7,7 @@
     export let codeUrl;
 </script>
 
-<article class="flex flex-col h-[500px] md:flex-row overflow-hidden bg-slate-600 text-slate-200 shadow-2xl/80 rounded-xl border-t-2">
+<article class="flex flex-col md::h-[500px] md:flex-row overflow-hidden bg-slate-600 text-slate-200 shadow-2xl/80 rounded-xl border-t-2">
     <!-- Zone image-->
     <div class="hidden md:block md:h-full md:w-1/3 bg-slate-700">
         <img src="{image}" alt="Photo" class="w-full h-full md:object-contain border-r-2 p-2">
@@ -26,16 +26,16 @@
             </div>
         </div>
         <!-- Tags -->
-        <div class="p-2 flex gap-5 justify-center">
+        <div class="p-2 flex flex-col items-center sm:flex sm:flex-row gap-5 sm:justify-center">
             {#if siteUrl}
                 <a href={siteUrl} target="_blank"
-                   class="border-2 p-2 rounded-3xl hover:bg-slate-700 hover:-translate-y-2 duration-300">
+                   class="border-2 p-2 rounded-3xl hover:bg-blue-500 hover:-translate-y-2 duration-300">
                     Accès au Site
                 </a>
             {/if}
             {#if codeUrl}
                 <a href={codeUrl} target="_blank"
-                   class="border-2 p-2 rounded-3xl hover:bg-slate-700 hover:-translate-y-2 duration-300">
+                   class="border-2 p-2 rounded-3xl hover:bg-blue-500 hover:-translate-y-2 duration-300">
                     Accès au Code
                 </a>
             {/if}

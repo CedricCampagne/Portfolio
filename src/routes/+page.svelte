@@ -62,13 +62,13 @@
 
 {#if showButton}
 <button on:click={scrollToTop} class="text-3xl fixed bottom-8 right-2 cursor-pointer rounded-3xl ring-2 p-2" aria-label="button-scroll-top">
-	<iconify-icon icon="bxs:up-arrow" ></iconify-icon>
+	<iconify-icon icon="bxs:up-arrow" class="text-md" ></iconify-icon>
 </button>
 {/if}
 
 <!-- Accueil -->
-<section class="flex flex-col sm:flex sm:flex-row sm:justify-around sm:p-8 shadow-xl sm:border-t-2 h-[70vh] mb-10">
-	<div class=" flex flex-col justify-center items-center  p-2 md:justify-around xl:flex xl:flex-col xl:flex-1 xl:justify-between xl:items-center">
+<section class="flex flex-col my-6 p-2 sm:flex sm:flex-row sm:justify-around sm:p-8 shadow-xl sm:border-t-2 sm:h-[70vh] mb-10">
+	<div class=" flex flex-col justify-center items-center  p-2 md:justify-center xl:flex xl:flex-col xl:flex-1 xl:justify-around xl:items-center">
 		<img src="src\lib\assets\images\cv_photo.jpeg" alt="Photo de profile"
 		class="w-56 h-56 mx-auto rounded-full border-4 border-slate-300 shadow-lg object-cover hidden xl:block">
 		<h1 class="text-4xl font-bold">Cédric Campagne</h1>
@@ -87,12 +87,12 @@
   </div>
 </section>
 <!-- A propos -->
-<section id="about" class="flex flex-col sm:flex sm:justify-evenly sm:gap-8 sm:p-8 shadow-xl sm:border-t-2 h-[70vh]">
+<section id="about" class="flex flex-col my-6 p-2 sm:flex sm:justify-evenly sm:gap-8 sm:p-8 shadow-xl sm:border-t-2 sm:h-[70vh]">
 	<div>
-		<h2 class="font-bold text-xl md:block hidden md:text-6xl pb-3 ">Mon parcours :</h2>
+		<h2 class="font-bold text-2xl md:block  md:text-6xl pb-3 ">Mon parcours :</h2>
 		<h3 class="font-bold text-xl md:block md:text-4xl ">De la gestion d’équipe au développement web</h3>
 	</div>
-    <p class=" md:text-2xl text-justify">Ancien directeur de restaurant chez McDonald’s, j’ai choisi de donner un nouvel élan à ma carrière en me reconvertissant vers le développement web.
+    <p class=" md:text-xl lg:text-2xl text-justify">Ancien directeur de restaurant chez McDonald’s, j’ai choisi de donner un nouvel élan à ma carrière en me reconvertissant vers le développement web.
         Fort de plusieurs années d’expérience en management et en organisation, où j’ai encadré plus de 50 collaborateurs,
         j’apporte aujourd’hui des compétences humaines solides : leadership, communication, gestion du stress et travail en équipe.
         Diplômé de la formation Développeur Web et Web Mobile (DWWM),
@@ -102,7 +102,7 @@
 </section>
 <!-- Compétences -->
  <section id="skill" class="flex flex-col sm:flex sm:justify-evenly sm:gap-8 sm:p-8 shadow-xl sm:border-t-2">
-	<h2 class="text-6xl mb-8">Mes Compétences : </h2>
+	<h2 class="font-bold text-2xl md:block  md:text-6xl pb-3 ">Mes Compétences : </h2>
 	<h3 class="text-center text-2xl mb-2">Front-End</h3>
 	<div>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
@@ -127,7 +127,7 @@
  </section>
 <!-- Projects -->
 <section id="projects" class="flex flex-col sm:flex sm:justify-evenly sm:gap-8 sm:p-8 shadow-xl sm:border-t-2 min-h-[70vh] overflow-y-hidden">
-    <h2 class="text-6xl mb-8">Mes projets : </h2>
+    <h2 class="font-bold text-2xl md:block  md:text-6xl pb-3 ">Mes projets : </h2>
     <div class="grid grid-cols-1  xl:grid-cols-2 xl:grid-rows-2 gap-6">
         {#each projects as project}
             <ProjectCard { ...project}/>
@@ -136,7 +136,7 @@
 </section>
 <!-- Formulaire -->
  <section id="contact" class="shadow-xl p-8 my-6 sm:border-t-2 lg:mx-auto lg:w-1/2">
-	<h2 class="text-6xl mb-8">Me Contacter</h2>
+	<h2 class="font-bold text-2xl md:block  md:text-6xl pb-3">Me Contacter</h2>
 	<form 
 		id="conctactForm"
 		action="https://formspree.io/f/mzznapag"
