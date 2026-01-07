@@ -3,7 +3,7 @@
 	import ProjectCard from "../lib/components/ProjectCard.svelte"
 	import { skills } from "$lib/data/skill";
 	import SkillCard from "$lib/components/SkillCard.svelte";
-
+	import { base } from "$app/paths";
 	import { onMount } from "svelte";
 
 	let showButton = false;
@@ -58,6 +58,7 @@
 <section class="w-fit mx-auto md:hidden">
 	<a href="https://github.com/CedricCampagne" target="_blank"><iconify-icon icon="mdi:github" class=" text-4xl text-slate-300 hover:text-white"></iconify-icon></a>
     <a href="https://www.linkedin.com/in/cédriccampagne" target="_blank"><iconify-icon icon="mdi:linkedin" class=" text-4xl text-slate-300 hover:text-white"></iconify-icon></a>
+	<a href="https://cedriccampagne.github.io/CV-interactif-V2/" target="_blank"><iconify-icon icon="tabler:file-cv-filled" class=" text-4xl text-slate-300 hover:text-white"></iconify-icon></a>
 </section>
 
 {#if showButton}
@@ -69,7 +70,7 @@
 <!-- Accueil -->
 <section class="flex flex-col my-6 p-2 sm:flex sm:flex-row sm:justify-around sm:p-8 shadow-xl sm:border-t-2 sm:h-[70vh] mb-10">
 	<div class=" flex flex-col justify-center items-center  p-2 md:justify-center xl:flex xl:flex-col xl:flex-1 xl:justify-around xl:items-center">
-		<img src="src\lib\assets\images\cv_photo.jpeg" alt="Photo de profile"
+		<img src="{base}/images/cv_photo.jpeg" alt="Photo de profile"
 		class="w-56 h-56 mx-auto rounded-full border-4 border-slate-300 shadow-lg object-cover hidden xl:block">
 		<h1 class="text-4xl font-bold">Cédric Campagne</h1>
 		<h2 class="text-xl text-slate-400">Développeur Web Full Stack</h2>
@@ -77,12 +78,13 @@
 	<div class="flex flex-col flex-1 justify-around gap-4 mt-6 sm:border-l-2 pl-3">
 		<h2 class="font-bold text-xl md:block hidden md:text-4xl "> Moi en quelques mots :</h2>
 	  	<p class="mx-auto text-slate-400 text-md md:text-xl">
-			Ancien directeur de restaurant, aujourd’hui développeur web full stack junior.
-			Je conçois des applications modernes et performantes, en m’appuyant sur des compétences fortes en leadership, organisation et travail d’équipe.
+			Ancien directeur de restaurant reconverti en développeur web full stack junior, je conçois des applications modernes, performantes et centrées utilisateur.
+			J’apporte une vraie valeur ajoutée grâce à mon sens de l’organisation, mon leadership et ma capacité à travailler efficacement en équipe.
 	  	</p>
 	  	<div class="hidden md:flex flex-row lg:flex lg:flex-col gap-3 ">
 			<a href="https://github.com/CedricCampagne" target="_blank" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon GitHub</a>
 			<a href="https://www.linkedin.com/in/cédriccampagne" target="_blank" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon Linkedin</a>
+			<a href="https://cedriccampagne.github.io/CV-interactif-V2/" target="_blank" class="max-w-[150px] px-4 py-2 bg-slate-500 rounded hover:bg-blue-500 text-center">Mon CV</a>
 	  	</div>
   </div>
 </section>
@@ -92,12 +94,13 @@
 		<h2 class="font-bold text-2xl md:block  md:text-6xl pb-3 ">Mon parcours :</h2>
 		<h3 class="font-bold text-xl md:block md:text-4xl ">De la gestion d’équipe au développement web</h3>
 	</div>
-    <p class=" md:text-xl lg:text-2xl text-justify">Ancien directeur de restaurant chez McDonald’s, j’ai choisi de donner un nouvel élan à ma carrière en me reconvertissant vers le développement web.
-        Fort de plusieurs années d’expérience en management et en organisation, où j’ai encadré plus de 50 collaborateurs,
-        j’apporte aujourd’hui des compétences humaines solides : leadership, communication, gestion du stress et travail en équipe.
-        Diplômé de la formation Développeur Web et Web Mobile (DWWM),
-        je me positionne comme développeur web full stack junior, capable de concevoir des applications modernes, accessibles et performantes.
-        Mon objectif est de mettre à profit cette double expertise — technique et humaine — pour contribuer à des projets ambitieux et collaboratifs.
+    <p class=" md:text-xl lg:text-2xl text-justify">Ancien directeur de restaurant chez McDonald’s, 
+		j’ai choisi de donner un nouvel élan à ma carrière en me reconvertissant dans le développement web.
+		Fort de plusieurs années d’expérience en management et en organisation, durant lesquelles j’ai encadré plus de 50 collaborateurs, 
+		j’apporte aujourd’hui des compétences humaines solides : leadership, communication, gestion du stress et travail en équipe.
+		Diplômé de la formation Développeur Web et Web Mobile (DWWM), je me positionne comme développeur web full stack junior, 
+		capable de concevoir des applications modernes, accessibles et performantes.
+		Mon objectif est de mettre à profit cette double expertise — technique et humaine — pour contribuer à des projets ambitieux et collaboratifs.
     </p>
 </section>
 <!-- Compétences -->
