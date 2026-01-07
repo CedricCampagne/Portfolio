@@ -1,7 +1,12 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import "./layout.css";
   import Footer from "$lib/components/Footer.svelte";
 	import Navbar from "$lib/components/Navbar.svelte";
+  export const prerender = true;
 </script>
 
 <div class="min-h-screen flex flex-col bg-slate-700 text-slate-100">
