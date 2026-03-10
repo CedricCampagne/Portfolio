@@ -18,7 +18,7 @@
 <section class="py-20 px-8 max-w-5xl mx-auto">
   <h2 class="text-4xl font-bold mb-12 text-gray-900 text-center">Projets</h2>
   <div class="grid md:grid-cols-2 gap-10">
-    {#each projects as project}
+    {#each projects as project, i (i)}
       <div class="bg-white border-l-4 border-green-500 shadow-lg rounded-lg p-8 hover:shadow-2xl transition">
         <h3 class="text-2xl font-semibold mb-3 text-gray-900">{project.name}</h3>
         <p class="text-gray-700 mb-3 leading-relaxed">{project.description}</p>
