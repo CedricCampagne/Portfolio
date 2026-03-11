@@ -19,7 +19,7 @@
                 LinkedIn
             </a>
             <a 
-                href="mailto:cedric.campagne@gmail.com"
+                href="mailto:ced.campagne@gmail.com"
                 class="text-gray-600 hover:text-green-600 transition"
             >
                 Email

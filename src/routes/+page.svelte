@@ -10,7 +10,7 @@
 	
 </script>
 
-<main>
+<main class="px-4 sm:px-6 lg:px-8">
 	<Header />
 	<Hero />
 	<About />
