@@ -26,10 +26,10 @@
         <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-items-center"> -->
         <div class="flex flex-wrap justify-center gap-10">
             {#each skills.filter(s => s.category === cat) as skill, i (i)}
-            <div class=
-                    "bg-white border-b-4 border-green-500 shadow-lg 
-                    rounded-xl p-6 flex flex-col items-center hover:shadow-2xl 
-                    transition-all duration-300 ease-in-out w-52"
+            <div class="bg-white border-b-4 border-green-500 shadow-lg 
+                    rounded-xl p-6 flex flex-col items-center
+                    hover:shadow-2xl hover:scale-105
+                    transition-all duration-400 ease-in-out w-52"
                 >
                     <Icon 
                         icon={skill.icon}

@@ -4,10 +4,10 @@
     let open = false;
 
     const links = [
-        { name: "À propos", href: "#about" },
-        { name: "Compétences", href: "#skills" },
-        { name: "Projets", href: "#projects" },
-        { name: "Contact", href: "#contact" }
+        { name: "À propos", href: "/#about" },
+        { name: "Compétences", href: "/#skills" },
+        { name: "Projets", href: "/#projects" },
+        { name: "Contact", href: "/#contact" }
     ];
 </script>
 
