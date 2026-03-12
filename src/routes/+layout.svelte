@@ -1,6 +1,8 @@
 <script lang="ts">
-  import "../routes/layout.css"; // Tailwind global
-  import favicon from '$lib/assets/favicon.svg';
+    import "../routes/layout.css"; // Tailwind global
+    import favicon from '$lib/assets/favicon.svg';
+    import Header from "$lib/sections/Header.svelte";
+    import Footer from "$lib/sections/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -10,4 +12,8 @@
     <link rel="icon" href={favicon} />
 </svelte:head>
 
-<slot />
+<Header />
+<main>
+    <slot />
+</main>
+<Footer />

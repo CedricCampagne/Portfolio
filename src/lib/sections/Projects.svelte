@@ -1,18 +1,5 @@
 <script lang="ts">
-    export let projects = [
-        {
-            name: "Site-Auteur",
-            description: "Application full stack de gestion et affichage de livres avec SPA front et base PostgreSQL.",
-            tech: ["SvelteKit", "TypeScript", "PostgreSQL", "NodeJs", "Express", "Sequelize"],
-            github: "https://github.com/CedricCampagne/site-auteur"
-        },
-        {
-            name: "Portfolio",
-            description: "Portfolio personnel moderne construit avec SvelteKit et Tailwind.",
-            tech: ["SvelteKit", "TailwindCSS", "TypeScript"],
-            github: "https://github.com/CedricCampagne/portfolio"
-        }
-    ];
+    import { projects } from "$lib/data/projects";
 </script>
 
 <section id="projects" class="py-20 px-6 sm:px-8 lg:px-0 max-w-6xl mx-auto">
@@ -22,8 +9,11 @@
 
     <div class="grid md:grid-cols-2 gap-12">
         {#each projects as project, i (i)}
-            <div class="flex flex-col justify-between bg-white border-l-4 border-b-2 border-green-500 shadow-md rounded-xl p-8 hover:shadow-xl transition duration-300">
-                
+            <div 
+                class="flex flex-col justify-between
+                bg-white border-l-2 border-b-2 border-green-500
+                shadow-md rounded-xl p-8 hover:shadow-xl transition duration-300"
+            >               
                 <h3 class="text-2xl font-semibold mb-3 text-gray-900">{project.name}</h3>
 
                 <p class="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
@@ -31,25 +21,25 @@
                 <!-- Tech badges -->
                 <div class="flex flex-wrap gap-2 mb-6">
                     {#each project.tech as t, i (i)}
-                        <span class="bg-green-500 text-white border font-medium px-3 py-1 rounded-full text-sm">
+                        <span class="bg-green-500 text-white font-medium px-3 py-1 rounded-full text-sm">
                             {t}
                         </span>
                     {/each}
                 </div>
 
-                <div class="flex items-center gap-4">
+                <div class="flex items-center self-center gap-4">
+                    <a 
+                        href={`/projects/${project.slug}`}
+                        class="border border-green-500 text-white bg-green-500 px-4 py-1 rounded hover:bg-white hover:text-green-500 transition-all duration-300"   
+                    >
+                        Détails
+                    </a>
                     <a
                         href={project.github}
                         target="_blank"
-                        class="text-green-600 font-semibold hover:underline"
+                        class="text-green-600 font-semibold hover:underline hover:underline-offset-4"
                     >
                         Voir le code
-                    </a>
-                    <a 
-                        href="#"
-                        class="border border-green-500 text-white bg-green-500 px-4 py-1 rounded hover:bg-white hover:text-green-500 transition-all duration-300"
-                    >
-                        Détails
                     </a>
                 </div>
             </div>
