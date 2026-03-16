@@ -4,12 +4,14 @@
 	import Skills from "$lib/sections/Skills.svelte";
 	import Projects from "$lib/sections/Projects.svelte";
 	import Contact from "$lib/sections/Contact.svelte";
+
+	export let data;
 </script>
 
 <main class="px-4 sm:px-6 lg:px-8">
 	<Hero />
 	<About />
 	<Skills />
-	<Projects />
+	<Projects projects={data.projects} />
 	<Contact />
 </main>

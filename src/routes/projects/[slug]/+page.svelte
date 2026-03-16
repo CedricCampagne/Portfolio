@@ -1,10 +1,10 @@
 <script lang="ts">
-    import { page } from "$app/stores";
-    import { projects } from "$lib/data/projects";
+	import type { Project } from "$lib/types/projects";
     import Icon from "@iconify/svelte";
 
-    $: slug = $page.params.slug;
-    $: project = projects.find(p => p.slug === slug);
+    export let data: { project :Project | null };
+    const project = data.project;
+
 </script>
 
 {#if project}
