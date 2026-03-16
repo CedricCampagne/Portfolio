@@ -7,4 +7,5 @@ export interface Project {
     github : string;
     demo : string | null;
     created_at : string;
+    tech : string[];
 }

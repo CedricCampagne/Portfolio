@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { projects } from "$lib/data/projects";
+	import type { Project } from "$lib/types/projects";
+    export let projects : Project[];
 </script>
 
 <section id="projects" class="py-20 px-6 sm:px-8 lg:px-0 max-w-6xl mx-auto">
