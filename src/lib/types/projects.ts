@@ -1,3 +1,5 @@
+import type { ProjectSection } from "./projectSection";
+
 export interface Project {
     id : number;
     slug : string;
@@ -8,4 +10,6 @@ export interface Project {
     demo : string | null;
     created_at : string;
     tech : string[];
+    features : string[];
+    sections : ProjectSection[];
 }
