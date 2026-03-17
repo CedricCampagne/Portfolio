@@ -18,11 +18,11 @@ CREATE TABLE project_techs (
 );
 
 -- Features par projet
-CREATE TABLE project_features (
-    id SERIAL PRIMARY KEY,
-    project_id INT REFERENCES projects(id) ON DELETE CASCADE,
-    feature TEXT
-);
+-- CREATE TABLE project_features (
+--     id SERIAL PRIMARY KEY,
+--     project_id INT REFERENCES projects(id) ON DELETE CASCADE,
+--     feature TEXT
+-- );
 
 -- Sections par projet
 CREATE TABLE project_sections (

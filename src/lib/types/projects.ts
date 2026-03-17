@@ -10,6 +10,5 @@ export interface Project {
     demo : string | null;
     created_at : string;
     tech : string[];
-    features : string[];
     sections : ProjectSection[];
 }

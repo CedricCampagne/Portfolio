@@ -20,7 +20,7 @@
                 <p class="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
 
                 <!-- Tech badges -->
-                <div class="flex flex-wrap gap-2 mb-6">
+                <div class="flex flex-wrap gap-2 mb-6 self-center md:self-start">
                     {#each project.tech as t, i (i)}
                         <span class="bg-green-500 text-white font-medium px-3 py-1 rounded-full text-sm">
                             {t}
@@ -28,7 +28,7 @@
                     {/each}
                 </div>
 
-                <div class="flex items-center self-center gap-4">
+                <div class="flex flex-col sm:flex-row items-center self-center gap-4">
                     <a 
                         href={`/projects/${project.slug}`}
                         class="border border-green-500 text-white bg-green-500 px-4 py-1 rounded hover:bg-white hover:text-green-500 transition-all duration-300"   
