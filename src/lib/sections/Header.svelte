@@ -14,7 +14,7 @@
 <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a 
-            href="#"
+            href="/"
             class="font-bold text-lg text-gray-900"
         >
             Cedric Campagne
@@ -32,7 +32,7 @@
             <a
                 href="https://github.com/CedricCampagne"
                 target="_blank"
-                class="border border-green-500 text-green-500 px-3 py-1 rounded hover:bg-green-500 hover:text-white transition"
+                class="border border-green-500 text-white bg-green-500 px-3 py-1 rounded hover:bg-white hover:text-green-500 transition duration-500"
             >
                 GitHub
             </a>

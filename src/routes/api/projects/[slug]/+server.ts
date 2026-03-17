@@ -25,13 +25,6 @@ export async function GET({ params }) {
         );
         project.tech = techs.map(t => t.tech);
 
-        // Récupérationdes features
-        const features = await query<ProjectFeature>(
-            'SELECT feature FROM project_features WHERE project_id = $1 ORDER BY id',
-            [project.id]
-        );
-        project.features = features.map(f => f.feature);
-
         // Récupérer les sections
         const sections = await query<ProjectSection>(
             'SELECT title, content FROM project_sections WHERE project_id = $1 ORDER BY id',

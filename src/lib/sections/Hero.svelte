@@ -5,12 +5,15 @@
             Cedric Campagne
         </h1>
         <p class="text-lg md:text-2xl text-gray-700">
-            Développeur Web Junior Full Stack — TypeScript | SvelteKit | PostgreSQL | Node.js
+            Développeur Full Stack Junior | TypeScript • SvelteKit — Apprendre et progresser
+        </p>
+        <p class="text-sm md:text-base text-gray-500 italic my-8">
+            Comprendre avant d’implémenter.
         </p>
         <div class="flex flex-col gap-2 sm:flex-row justify-center md:justify-start space-x-4 mt-6">
             <a 
                 href="#projects" 
-                class=" w-full sm:w-auto border-2 border-green-500 bg-green-500 text-white px-6 py-3 rounded hover:bg-white hover:text-green-500 transition"
+                class=" w-full sm:w-auto border-2 border-green-500 bg-green-500 text-white px-6 py-3 rounded hover:bg-white hover:text-green-500 transition duration-500"
             >
                 Voir mes projets
             </a>
@@ -27,7 +30,7 @@
         <img
             src="/images/cv_photo.jpeg"
             alt="Cedric Campagne"
-            class="w-48 h-48 md:w-56 md:h-56 rounded-full shadow-lg object-cover"
+            class="w-48 h-48 md:w-56 md:h-56 rounded-full shadow-lg object-cover ring-2 ring-green-500"
         >
     </div>
 </section>
