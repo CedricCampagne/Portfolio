@@ -27,14 +27,17 @@
                         </span>
                     {/each}
                 </div>
-
-                <div class="flex flex-col sm:flex-row items-center self-center gap-4">
-                    <a 
-                        href={`/projects/${project.slug}`}
-                        class="border border-green-500 text-white bg-green-500 px-4 py-1 rounded hover:bg-white hover:text-green-500 transition-all duration-300"   
+  
+                <div class="flex flex-col sm:flex-row items-center self-center gap-6 my-4">
+                    {#if project.demo}
+                    <a
+                        href={project.demo}
+                        target="_blank"
+                        class="text-green-600 font-semibold hover:underline hover:underline-offset-4"
                     >
-                        Détails
+                        Voir le site
                     </a>
+                    {/if}
                     <a
                         href={project.github}
                         target="_blank"
@@ -42,7 +45,15 @@
                     >
                         Voir le code
                     </a>
-                </div>
+                </div> 
+                <div class="flex flex-col sm:flex-row items-center self-center gap-4">
+                    <a 
+                        href={`/projects/${project.slug}`}
+                        class="border border-green-500 text-white bg-green-500 px-4 py-1 rounded hover:bg-white hover:text-green-500 transition-all duration-300"   
+                    >
+                        Détails
+                    </a>
+                </div> 
             </div>
         {/each}
     </div>
