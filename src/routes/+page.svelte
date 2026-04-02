@@ -1,9 +1,17 @@
 <script lang="ts">
+	import Hero from "$lib/sections/Hero.svelte";
+	import About from "$lib/sections/About.svelte";
+	import Skills from "$lib/sections/Skills.svelte";
+	import Projects from "$lib/sections/Projects.svelte";
+	import Contact from "$lib/sections/Contact.svelte";
 
+	export let data;
 </script>
 
-<main class="min-h-screen flex items-center justify-center">
-	<h1 class="text-4xl font-bold">
-		Portfolio en construction
-	</h1>
+<main class="px-4 sm:px-6 lg:px-8">
+	<Hero />
+	<About />
+	<Skills />
+	<Projects projects={data.projects} />
+	<Contact />
 </main>
